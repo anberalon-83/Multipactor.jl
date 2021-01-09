@@ -1,0 +1,89 @@
+{
+  "waveguide": {
+    "dimension": {
+      "a": 5.0,
+      "b": 4.0
+    },
+    "sey": {
+      "model": 1,
+      "params": "aluminio",
+      "measures": "file_sey_up.txt"
+    }
+  },
+  "dielectrics": {
+    "diel_1": {
+      "dimension": {
+        "x": 2.0,
+        "y": 5.0,
+        "c": 2.0,
+        "d": 4.0
+      },
+      "epsilon_r": [
+        2.1,
+        0
+      ],
+      "sey": {
+        "model": 1,
+        "params": "aluminio",
+        "measures": "file_sey_up.txt"
+      }
+    },
+    "diel_2": {
+      "dimension": {
+        "x": 2.0,
+        "y": 5.0,
+        "c": 2.0,
+        "d": 4.0
+      },
+      "epsilon_r": [
+        2.1,
+        0
+      ],
+      "sey": {
+        "model": 1,
+        "params": "aluminio",
+        "measures": "file_sey_up.txt"
+      }
+    }
+  },
+  "em_field": {
+    "modes": 100,
+    "n_mode": 1,
+    "order_mode": 1,
+    "plotexeyez": 1,
+    "plothxhyhz": 1,
+    "plotresz": 1,
+    "disper": 1,
+    "testresz": 1,
+    "epsrcp1": 1.0,
+    "epsrcpp1": 0.0,
+    "nrm": 2505,
+    "nbf": 800,
+    "no": 2
+  },
+  "simulation": {
+    "frequency": [
+      1.0,
+      10.0,
+      50
+    ],
+    "rf_cycles": [
+      10,
+      100
+    ],
+    "v_eff": [
+      1.0,
+      50.0,
+      100
+    ],
+    "phase": [
+      1.0,
+      50.0,
+      100
+    ],
+    "adaptative_delta": [
+      4.0,
+      4.0
+    ]
+  }
+}
